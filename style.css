@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 45px;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.navbar_mobile {
+  display: none;
+}
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.navbar_links li:nth-child(4n) {
+  padding: 10px 20px;
+  background-color: gold;
+  border-radius: 3px;
+
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar_links li:nth-child(4n):hover {
+  background-color: orange;
+}
+
+/* SEÇÃO */
+
+.artigo_principal {
+  display: flex;
+  gap: 50px;
+}
+
+.artigo_principal img {
+  width: 350px;
+
+}
+
+.artigo_principal .title {
+  font-size: 31px;
+}
+
+.artigo_principal .paragraph {
+  padding: 20px 0;
+}
+
+.artigo_profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.artigo_profile img {
+  width: 60px;
+  height: 60px;
+}
+
+.artigo_profile_texto p {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.artigo_profile_texto span {
+  font-size: 12px;
+}
+
+.bot-container {
+  display: flex;
+  margin-top: 60px; 
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+}
+
+.card-top img {
+    width: 320px;
+}
+
+.card-top h1 {
+  margin-top: 15px;
+  font-size: 31px;
+}
+
+.card-top span {
+  padding: 10px 0;
+  color: gray;
+  font-weight: 500;
+}
+
+.perfil {
+  width: 60px;
+  height: 60px;
+}
+
+.card-perfil {
+  display: flex;
+  margin-top: 20px;
+
+  gap: 20px;
+}
+
+.top-container-side-texto p {
+  margin-top: 15px;
+  
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.top-container-side-texto span {
+  padding: 10px 0;
+  color: gray;
+  font-size: 12px;
+  
+}
+
+footer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+/* ESTILIZAÇÃO TABLET */
+@media screen and (max-width: 768px) {
+  header {
+    width: 555px;
+    margin: 40px auto;
+    
+  }
+
+   .artigo_principal {
+    flex-direction: column;
+     width: 555px;
+
+     margin: 0 auto;
+  }
+
+  .artigo_principal .title {
+  margin-top: -21px;
+}
+  
+  .artigo_principal img {
+    width: 100%;
+    height: 300px;
+  }
+
+  
+  .artigo_profile {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .artigo_profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .artigo_profile_info p {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .artigo_profile_info span {
+    font-size: 12px;
+  }
+
+  
+  .bot-container {
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; 
+    gap: 50px;
+    width: 555px;
+
+}
+
+  .bot-container img {
+    width: 100%;
+     height: 200px;
+    
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+  .card-perfil img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+
+  footer {
+    width: 555px;
+    margin: 40px auto;
+
+  }
+  
+}
+
+
+@media screen and (max-width: 425px) {
+  header {
+    width: 320px;
+  }
+
+  .navbar {
+    display:flex;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+
+   .artigo_principal {
+    flex-direction: column;
+    
+  }
+
+  .artigo_principal .title {
+  margin-top: -25px;
+  font-size: 31px;
+}
+  
+  
+  .bot-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; 
+  gap: 20px;
+}
+
+    footer img {
+      width: 105px;
+      height: 32px
+    }
+
+  footer {
+    flex-direction: column;
+    width: 320px;
+  }
+
+  .mobile-btn {
+  display: block;
+}
+ 
+  .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

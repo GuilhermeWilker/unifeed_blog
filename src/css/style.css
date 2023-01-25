@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
 header {
   display: flex;
@@ -37,6 +37,15 @@ header {
   background-color: orange;
 }
 
+.navbar {
+  position: relative;
+}
+
+.mobile_menu {
+  position: relative;
+  display: none;
+}
+
 /* SEÇÃO */
 
 .artigo_principal {
@@ -46,7 +55,6 @@ header {
 
 .artigo_principal img {
   width: 350px;
-
 }
 
 .artigo_principal .title {
@@ -79,7 +87,7 @@ header {
 
 .bot-container {
   display: flex;
-  margin-top: 60px; 
+  margin-top: 60px;
   gap: 20px;
 }
 
@@ -88,7 +96,7 @@ header {
 }
 
 .card-top img {
-    width: 320px;
+  width: 320px;
 }
 
 .card-top h1 {
@@ -116,7 +124,7 @@ header {
 
 .top-container-side-texto p {
   margin-top: 15px;
-  
+
   font-weight: 800;
   font-size: 14px;
 }
@@ -125,7 +133,6 @@ header {
   padding: 10px 0;
   color: gray;
   font-size: 12px;
-  
 }
 
 footer {
@@ -140,26 +147,25 @@ footer {
   header {
     width: 555px;
     margin: 40px auto;
-    
+    position: relative;
   }
 
-   .artigo_principal {
+  .artigo_principal {
     flex-direction: column;
-     width: 555px;
+    width: 555px;
 
-     margin: 0 auto;
+    margin: 0 auto;
   }
 
   .artigo_principal .title {
-  margin-top: -21px;
-}
-  
+    margin-top: -21px;
+  }
+
   .artigo_principal img {
     width: 100%;
     height: 300px;
   }
 
-  
   .artigo_profile {
     display: flex;
     align-items: center;
@@ -181,25 +187,23 @@ footer {
     font-size: 12px;
   }
 
-  
   .bot-container {
     margin: 0 auto;
-    
+
     display: flex;
     flex-direction: column;
-    margin-top: 60px; 
+    margin-top: 60px;
     gap: 50px;
     width: 555px;
-
-}
+  }
 
   .bot-container img {
     width: 100%;
-     height: 200px;
-    
+    height: 200px;
+
     object-fit: cover;
     border-radius: 15px;
-}
+  }
 
   .card-perfil img {
     width: 45px;
@@ -210,61 +214,77 @@ footer {
   footer {
     width: 555px;
     margin: 40px auto;
-
   }
-  
 }
-
 
 @media screen and (max-width: 425px) {
   header {
-    width: 320px;
+    width: 535px;
+    z-index: auto;
   }
 
-  .navbar {
-    display:flex;
+  .navbar_links {
+    display: none;
   }
 
   .card {
     margin-top: 20px;
+    width: 535px;
   }
 
-
-   .artigo_principal {
+  .artigo_principal {
     flex-direction: column;
-    
+    margin: 0 auto;
+
+    width: 535px;
   }
 
   .artigo_principal .title {
-  margin-top: -25px;
-  font-size: 31px;
-}
-  
-  
+    margin-top: -25px;
+    font-size: 31px;
+  }
+
   .bot-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px; 
-  gap: 20px;
-}
-
-    footer img {
-      width: 105px;
-      height: 32px
-    }
-
-  footer {
+    display: flex;
     flex-direction: column;
-    width: 320px;
+    margin-top: 60px;
+    gap: 20px;
   }
 
   .mobile-btn {
-  display: block;
-}
- 
-  .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+    display: block;
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .mobile_menu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    padding: 15px;
+    width: 200px;
+
+    top: 0;
+    right: 0px;
+    position: relative;
+
+    background-color: rgb(245, 245, 245);
+  }
+
+  .mobile_menu ul li {
+    padding: 15px 0;
+  }
+
+  footer img {
+    width: 105px;
+    height: 32px;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 535pxpx;
+  }
 }
